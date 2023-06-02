@@ -1,0 +1,495 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .main_header {
+    color: #FFFFFF;
+    font-size: 72px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  
+ 
+  
+  
+ 
+  
+  
+  
+ 
+  
+  /* Media queries */
+  @media only screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .navbar-toggle {
+      display: none;
+    }
+  }
+  
+  
+  
+  /* Footer styles */
+  footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-logo h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .footer-text p {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text a {
+    color: #fff;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 6px;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .footer-links a:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+  
+  
+  
+  
+
+  
+  @media only screen and (max-width: 767px) {
+    .footer-logo h3 {
+       font-size: 24px;
+    }
+  
+    .footer-text p,
+    .footer-links li {
+       display: block;
+       text-align: center;
+    }
+  
+    .footer-links li {
+       margin: 0;
+       margin-bottom: 10px;
+    }
+  
+    .footer-links li:last-child {
+       margin-bottom: 0;
+    }
+  
+    .footer-bottom {
+       margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    /* Style for footer section on mobile devices */
+    footer {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+  
+    /* Responsive styles for screens smaller than 768px */
+    .container {
+      padding: 10px;
+    }
+  
+    .logo {
+      font-size: 28px;
+    }
+  
+   
+   
+  }
+  
+  
+ 
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ------------------------------------------------------------------------------------------------------ */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* custom common class VC */
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .nav-bar {
+    height: 70px;
+    background-color: #333;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .nav-bar ul li a:hover {
+    color: #F2B138;
+  }
+  
+  .nav-bar ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-logo h1 {
+    margin: 0 !important;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .nav-menu ul li {
+    padding: 10px;
+  }
+  
+  .nav-menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 18px;
+  }
+  
+  
+  /* media queries */
+  @media screen and (min-width: 850px) {
+    .nav-menu ul li:last-child {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 849px) {
+    .nav-menu ul li:last-child {
+      display: block;
+      position: absolute;
+      top: 14px;
+      right: 10px;
+    }
+    .nav-menu ul li:not(:last-child){
+      display: none;
+    }
+    .nav-menu.responsive-menu ul li{
+      display: block;
+    }
+    .nav-bar{
+      display: block;
+      height: auto;
+    }
+    .nav-menu.nav-menu.responsive-menu{
+      padding-bottom: 5px;
+    }
+    .nav-menu ul {
+      display: block;
+      margin: 0;
+    }
+    .nav-logo{
+      padding: 10px 0px;
+    }
+    .nav-menu ul li {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .main_header{
+      font-size: 40px;
+    }
+  
+  }
+  h2 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  .main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #666;
+  }
+  
+  .contact-info {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  
+  
+  
+  .section-container {
+    padding: 10px;
+  }
+  
+  .section-container:first-child {
+    height: 700px;
+    background: url('../img/contactus.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .image-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 767px) {
+    .image-overlay {
+      font-size: unset;
+    }
+  
+    .section-container:first-child {
+      height: 400px;
+    }
+  
+    .section-head {
+      font-size: 35px;
+    }
+  }
+  
+  
+.address-info{
+    background-color:black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  
+
+}
+table.schedule-table {
+    float: right;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table.schedule-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  table.schedule-table th,
+  table.schedule-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  table.schedule-table th {
+    background-color: #f2f2f2;
+  }
+  
+  table.schedule-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  table.schedule-table tr:hover td {
+    color: blue;
+  }
+
+
+  .schedule-table {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 20px;
+    border-collapse: collapse;
+    z-index: 2;
+    max-width: 100%; 
+    width: auto;
+  }
+ caption{
+    background-color: green;
+ }
+  
+   
+    /*  media query for screens smaller than 767px */
+@media screen and (max-width: 767px) {
+  table.schedule-table {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    padding: 10px;
+  }
+
+  .footer-logo h3 {
+    font-size: 24px;
+  }
+
+  .footer-text p,
+  .footer-links li {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-links li:last-child {
+    margin-bottom: 0;
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+  }
+}
+
+    
+    
+    
+  
